@@ -50,6 +50,10 @@ class RequestController extends Controller
                 $msg->from([$data[1],]);
             }
         );
+<<<<<<< HEAD
+=======
+        Mail::to($sender)->send("yo! my country people");
+>>>>>>> feat(project-structure):Initial project structure
 
         return response()->json($helpRequest, 201);
     }

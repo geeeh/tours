@@ -97,12 +97,15 @@ class UserController extends Controller
         $user->name = $request->input("name");
         $user->email = $request->input("email");
         $user->password = Hash::make($request->input("password"));
+<<<<<<< HEAD
         $image = $request->file('image');
         $filename  = time() . '.' . $image->getClientOriginalExtension();
         $foldername = "profile/";
         $destinationPath = $this->publicPath($foldername);
         $image->move($destinationPath, $filename);
         $user->image = $foldername.$filename;
+=======
+>>>>>>> feat(project-structure):Initial project structure
         $user->save();
 
         return response()->json($user, 201);
