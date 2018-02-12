@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use App\Exceptions\NotFoundException;
+use App\Models\Company;
 
 /**
  * EventController
@@ -23,18 +24,36 @@ class EventController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['only'=>['create', 'modify', 'delete', 'getUpcomingEvents']]);
+        $this->middleware(
+            'auth',
+            [
+                'only'=>[
+                'modify', 'delete'
+                ]
+            ]
+        );
     }
 
+
     /**
-     * Fetch all events.
-     *
-     * @return \Illuminate\Http\Response
+     * Fetch all events
      */
     public function getAll()
     {
-       $events = Event::all();
-       return response()->json($events, 200);
+        $events = Event::all();
+        return response()->json($events, 200);
+    }
+
+    /**
+     * Fetch all events belonging to a company.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getById($id)
+    {
+        $events =Event::where("company_id", $id)
+        ->get();
+        return response()->json($events, 200);
     }
 
     /**
@@ -44,23 +63,22 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function create(Request $request)
+    public function create(Request $request, $id)
     {
-        $this->validate(
-            $request, Event::$rules
-        );
+//        $this->validate(
+//            $request, Event::$rules
+//        );
 
         $event = new Event();
-        $event->name = $request->input("name");
-        dd($request->input("location"));
+        $event->name = $request->input("title");
         $event->location = $request->input("location");
         $event->cost = $request->input("cost");
         $event->date = $request->input("date");
-        $event->activities = $request->input( "activities");
-        $event->company_id = $request->input("company");
-
+        $event->activities = $request->input("activities");
+        $event->company_id = $id;
+        $event->description = $request->input("description");
         $image = $request->file('image');
-        $filename  = time() . '.' . $image->getClientOriginalExtension();
+        $filename = uniqid(8).'.'.$image->getClientOriginalExtension();
         $folderName = "uploads/";
         $destinationPath = $this->publicPath($folderName);
         $image->move($destinationPath, $filename);
@@ -68,7 +86,22 @@ class EventController extends Controller
         $event->image = $folderName.$filename;
         $event->save();
 
-        return response()->json($event, 201);
+        return response()->json("success", 201);
+    }
+
+    /**
+     * Show interest in event.
+     *
+     */
+    public function showInterest($id, $user_id,  Request $request) {
+        $event = Event::find($id);
+        if ($request->input('interested')){
+            $event->user_id = $user_id;
+            $event->users()->save();
+            $result = (Object)["status" => "success"];
+            return response()->json($result, 201);
+        }
+
     }
 
     /**
@@ -78,17 +111,11 @@ class EventController extends Controller
      */
     public function getUpcomingEvents()
     {
-        $today = Carbon::now();
-        $events = Event::all();
 
-        $upcomingEvents = [];
-        foreach ($events as $event) {
-            $date = Carbon::parse($event->date);
-            echo($date);
-            if ($date->gt($today)) {
-                array_push($upcomingEvents, $event);
-            }
-        }
+        $upcomingEvents = Event::orderBy('date', 'asc')
+            ->limit(5)
+            ->get();
+
         return response()->json($upcomingEvents, 200);
     }
 
@@ -98,15 +125,17 @@ class EventController extends Controller
      * @param Request $request - request object.
      * @param Integer $id - event id.
      *
+     * @param $eventId - event id
      * @return \Illuminate\Http\JsonResponse
      * @throws NotFoundException
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id, $eventId)
     {
         $this->validate(
             $request, Event::$rules
         );
-        $event = Event::find($id);
+        $event = Event::find($eventId)
+            ->where('comapny_id', $id);
         if (!$event) {
             throw new NotFoundException();
         }
@@ -122,14 +151,15 @@ class EventController extends Controller
     /**
      * Delete an event by id.
      *
-     * @param integer - $id - event id
+     * @param $id
+     * @param $eventId - event id
      *
      * @return \Illuminate\Http\JsonResponse
      * @throws NotFoundException
      */
-    public function delete($id)
+    public function delete($id, $eventId)
     {
-        $event = Event::find($id);
+        $event = Event::find($eventId);
         if (!$event) {
             throw new NotFoundException();
         }

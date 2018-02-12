@@ -17,7 +17,6 @@ class CategoryController extends Controller
     public function __construct()
     {
         $this->middleware('auth', ['only'=>['create','delete']]);
-
     }
 
     /**
@@ -26,7 +25,24 @@ class CategoryController extends Controller
     public function all()
     {
         $categories = Category::all();
-        return response($categories, 200);
+        return response()->json($categories, 200);
+    }
+
+
+    /**
+ * Get all locations
+ */
+    public function fetchLocations() {
+        $categories = Category::where('type', "LOCATION")->get();
+        return response()->json($categories, 200);
+    }
+
+    /**
+     * Get all activities
+     */
+    public function fetchActicities() {
+        $categories = Category::where('type', "ACTIVITY" )->get();
+        return response()->json($categories, 200);
     }
 
     /**

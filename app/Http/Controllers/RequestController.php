@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Request as HelpRequest;
-use Mail;
+use Mailgun\Mailgun;
 use Illuminate\Http\Request;
 
 class RequestController extends Controller
@@ -24,6 +24,7 @@ class RequestController extends Controller
      * @param Request $request
      *
      * @return \Illuminate\Http\JsonResponse
+     * @throws \Mailgun\Messages\Exceptions\MissingRequiredMIMEParameters
      */
     public function createRequest(Request $request)
     {
@@ -39,17 +40,18 @@ class RequestController extends Controller
         $helpRequest->description = $description;
         $helpRequest->save();
 
-        $data = [];
         $message = "I need help planning a trip Description: ". $description . "\n phone: ". $phone;
-        $data[] = getenv('ADMIN_EMAIL');
         $data[] = $request->input("email");
 
-        Mail::raw('$message', function ($message) {
-                $message->subject('Mtalii request Notification');
-                $message->from('no-reply@mtalii.com', 'Mtalii');
-                $message->to('godwingitonga89@gmail.com');
-        });
+        $mgClient = new Mailgun(getenv('MAILGUN_SECRET'), new \Http\Adapter\Guzzle6\Client());
+        $domain = getenv("MAILGUN_DOMAIN");
+        $result = $mgClient->sendMessage($domain, array(
+            'from'    => $sender,
+            'to'      => getenv(MAIL_USERNAME),
+            'subject' => 'Hello',
+            'text'    => $message
+        ));
 
-        return response()->json($helpRequest, 201);
+        return response()->json($result, 201);
     }
 }

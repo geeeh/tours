@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\ConflictHttpException;
 use App\Models\Company;
 use Illuminate\Http\Request;
 use App\Exceptions\NotFoundException;
@@ -36,10 +37,9 @@ class CompanyController extends Controller
      * @param $id - user id
      * @return \Illuminate\Http\JsonResponse
      */
-    public function getAll($id)
+    public function getAll()
     {
-       $companies = Company::all()
-       ->where('user', $id);
+       $companies = Company::all();
        return response()->json($companies, 200);
     }
 
@@ -50,13 +50,22 @@ class CompanyController extends Controller
      * @param $id - user id
      *
      * @return \Illuminate\Http\JsonResponse
+     * @throws ConflictHttpException
      */
     public function create(Request $request, $id)
     {
         $this->validate($request, Company::$rules);
 
+        $companyName = $request->input("name");
+
+        $name = Company::where('name', $companyName);
+
+        if ($name) {
+            throw new ConflictHttpException("name already taken");
+        }
+
         $company = new Company();
-        $company->name = $request->input("name");
+        $company->name = $name;
         $company->location = $request->input("location");
         $company->phone = $request->input("phone");
         $company->email = $request->input("email");
@@ -75,12 +84,13 @@ class CompanyController extends Controller
      * @return \Illuminate\Http\JsonResponse
      *
      * @throws NotFoundException
+     * @throws ConflictHttpException
      */
     public function delete($id, $company_id)
     {
-        $company = Company::find($company_id)->where('user', $id);
+        $company = Company::find($company_id);
         if (!$company) {
-            throw new NotFoundException();
+            throw new NotFoundException('company not found');
         }
         $company->delete();
         return response()->json('deleted', 200);
@@ -88,17 +98,14 @@ class CompanyController extends Controller
 
     /**
      * Get companies registered by curent user.
-     * 
+     *
      * @param Request $request - request object.
-     * 
+     *
      * @return Response - response object.
      */
-    public function getCompanyByCurrentUser(Request $request)
+    public function getCompanyById($id, Request $request)
     {
-        $companies = Company::where("user", $request->user()->id);
-        if ($companies) {
-            return response()->json($companies->get(), 200);
-        }
-        return response()->json([], 200);
+        $companies = Company::where("user", $id);
+        return response()->json($companies, 200);
     }
 }

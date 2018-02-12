@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Profile;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Response;
 
@@ -19,7 +20,14 @@ class UserController extends Controller
      */
     public function __construct()
     {
-        //
+        $this->middleware(
+            'auth',
+            [
+                'only'=>[
+                    'createProfile'
+                ]
+            ]
+        );
     }
 
     /**
@@ -94,5 +102,56 @@ class UserController extends Controller
         $user->save();
 
         return response()->json($user, 201);
+    }
+
+    public function createProfile($id, Request $request) {
+        $this->validate($request, Profile::$rules);
+
+        $userProfile = new Profile();
+        $userProfile->name = $request->input('name');
+        $userProfile->phone = $request->input('phone');
+        $userProfile->about = $request->input('about');
+        $userProfile->package = $request->input('package');
+        $userProfile->user_id = $id;
+        $folderName = "uploads/";
+
+        $photo = $request->file('photoUrl');
+        $photoname = uniqid(8).'.'.$photo->getClientOriginalExtension();
+        $destinationPath = $this->publicPath($folderName);
+        $photo->move($destinationPath, $photoname);
+
+        $userProfile->photoUrl = $folderName.$photoname;
+
+        $badge = $request->file('badge');
+        $badgename = uniqid(8).'.'.$badge->getClientOriginalExtension();
+        $destinationPath = $this->publicPath($folderName);
+        $badge->move($destinationPath, $badgename);
+        $userProfile->badge = $folderName.$badgename;
+        $userProfile ->save();
+
+        return $userProfile;
+
+    }
+
+    /**
+     * Fetch user profile
+     * @param id - user id.
+     * @return Response - json
+     */
+    public function getUserProfile($id)
+    {
+        $userProfile = Profile::with('user')->where('user_id', $id)->get()->toArray();
+        $user = $userProfile[0]["user"];
+        $result = (object)[
+            "name"=>$userProfile[0]["name"],
+            "email" => $user["email"],
+            "photo" => $userProfile[0]["photoUrl"],
+            "phone" => $userProfile[0]["phone"],
+            "badge" => $userProfile[0]["badge"],
+            "about" => $userProfile[0]["about"],
+            "package" => $userProfile[0]["package"]
+        ];
+
+        return response()->json($result, 200);
     }
 }

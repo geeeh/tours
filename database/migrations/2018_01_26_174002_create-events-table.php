@@ -21,8 +21,9 @@ class CreateEventsTable extends Migration
                 $table->engine = "InnoDb";
                 $table->increments('id');
                 $table->string('name');
-                $table->json('location');
+                $table->string('location');
                 $table->json('activities');
+                $table ->text('description');
                 $table->string('cost');
                 $table->string('image');
                 $table->dateTime('date');

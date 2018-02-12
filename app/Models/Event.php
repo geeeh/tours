@@ -22,12 +22,13 @@ class Event extends Model
     ];
 
     public static $rules = [
-        'name' => 'required',
+        'title' => 'required',
         'cost' => 'required',
-        'location' => 'required|json',
+        'location' => 'required',
         'activities' => 'required',
+        'description' => 'required',
         'date' => 'required',
-        'image' => 'file',
+        'image' => 'required',
     ];
 
     /**

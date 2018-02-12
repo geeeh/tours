@@ -22,4 +22,9 @@ class Company extends Model
 
 
     public $hidden = [];
+
+    public function events()
+    {
+        return $this->hasMany('App\Models\Event');
+    }
 }

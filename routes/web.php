@@ -20,10 +20,20 @@ $router->get(
 $router->group(
     ['prefix' => 'events'], function () use ($router) {
         $router->get('list', 'EventController@getAll');
-        $router->post('create', 'EventController@create');
-        $router->get('upcomingEvents', 'EventController@getUpcomingEvents');
-        $router->put('updateEvent/{id}', 'EventController@update');
-        $router->delete('deleteEvent/{id}', 'EventController@delete');
+        $router->get('upcoming', 'EventController@getUpcomingEvents');
+        $router->post('{id}/book', 'EventController@showInterest');
+        $router->get('{id}', 'EventController@getById');
+
+}
+);
+
+$router->group(
+    ['prefix' => 'categories'], function () use ($router) {
+        $router->get('locations', 'CategoryController@fetchLocations');
+        $router->get('activities', 'CategoryController@fetchActicities');
+        $router->get('list', 'CategoryController@all');
+        $router->post('create', 'CategoryController@create');
+        $router->delete('delete/{id}', 'CategoryController@delete');
     }
 );
 
@@ -44,9 +54,13 @@ $router->group(
 
 $router->group(
     ['prefix' => 'companies'], function () use ($router) {
-        $router->get('list', '');
+        $router->get('list', 'CompanyController@getAll');
         $router->post('create', 'CompanyController@create');
         $router->get('getCompanyByUser', 'CompanyController@getCompanyByCurrentUser');
+        $router->post('{id}/events', 'EventController@create');
+        $router->get('{id}/events', 'EventController@getById');
+        $router->put('{id}/events/{eventId}', 'EventController@update');
+        $router->delete('{id}/events/{eventId}', 'EventController@delete');
     }
 );
 
@@ -59,9 +73,11 @@ $router->group(
 $router->group(
     ['prefix' => 'users'], function () use ($router) {
         $router->get('getAllUsers', 'UserController@getAll');
-        $router->get('{id}/companies', 'CompanyController@getAll');
+        $router->get('{id}/companies', 'CompanyController@getCompanyById');
         $router->post('{id}/companies', 'CompanyController@create');
         $router->delete('{id}/companies/{company_id}', 'CompanyController@delete');
+        $router->post('{id}/', 'UserController@createProfile');
+        $router->get('{id}/', 'UserController@getUserProfile');
     }
 );
 
