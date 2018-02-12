@@ -19,10 +19,6 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password', 255);
-<<<<<<< HEAD
-            $table->string('image');
-=======
->>>>>>> feat(project-structure):Initial project structure
             $table->string('api_key')->nullable()->unique();
             $table->rememberToken();
             $table->timestamps();
