@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Request as HelpRequest;
-use Illuminate\Support\Facades\Mail;
+use Mail;
 use Illuminate\Http\Request;
 
 class RequestController extends Controller
@@ -44,13 +44,11 @@ class RequestController extends Controller
         $data[] = getenv('ADMIN_EMAIL');
         $data[] = $request->input("email");
 
-        Mail::raw(
-            $message, $data, function ($msg) use ($data) {
-                $msg->to([$data[0],]);
-                $msg->from([$data[1],]);
-            }
-        );
-        Mail::to($sender)->send("yo! my country people");
+        Mail::raw('$message', function ($message) {
+                $message->subject('Mtalii request Notification');
+                $message->from('no-reply@mtalii.com', 'Mtalii');
+                $message->to('godwingitonga89@gmail.com');
+        });
 
         return response()->json($helpRequest, 201);
     }

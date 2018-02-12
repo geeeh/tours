@@ -49,15 +49,19 @@ class EventController extends Controller
         $this->validate(
             $request, Event::$rules
         );
+
         $event = new Event();
         $event->name = $request->input("name");
+        dd($request->input("location"));
         $event->location = $request->input("location");
         $event->cost = $request->input("cost");
         $event->date = $request->input("date");
+        $event->activities = $request->input( "activities");
+        $event->company_id = $request->input("company");
 
         $image = $request->file('image');
         $filename  = time() . '.' . $image->getClientOriginalExtension();
-        $folderName = "images/";
+        $folderName = "uploads/";
         $destinationPath = $this->publicPath($folderName);
         $image->move($destinationPath, $filename);
 

@@ -78,13 +78,7 @@ class UserController extends Controller
      */
     public function create(Request $request)
     {
-        $this->validate(
-            $request, [
-                "name" => "required",
-                "email" => "required",
-                "password" => "required",
-            ]
-        );
+        $this->validate($request, User::$rules);
         $exists = User::where("email", $request->input("email"))->first();
         if ($exists) {
             return response()->json(
@@ -94,7 +88,7 @@ class UserController extends Controller
             );
         }
         $user = new User();
-        $user->name = $request->input("name");
+        $user->name = $request->input("username");
         $user->email = $request->input("email");
         $user->password = Hash::make($request->input("password"));
         $user->save();

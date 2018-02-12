@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Company;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use App\Exceptions\NotFoundException;
 
 /**
@@ -23,7 +22,6 @@ class CompanyController extends Controller
         $this->middleware(
             'auth', [
                 'only'=>[
-                    'create',
                     'modify',
                     'delete',
                     'getCompanyByCurrentUser'
@@ -34,23 +32,26 @@ class CompanyController extends Controller
 
     /**
      * Get all companies.
-     * 
+     *
+     * @param $id - user id
      * @return \Illuminate\Http\JsonResponse
      */
-    public function getAll()
+    public function getAll($id)
     {
-       $companies = Company::all();
+       $companies = Company::all()
+       ->where('user', $id);
        return response()->json($companies, 200);
     }
 
     /**
      * Add new company entry.
-     * 
-     * @param Request $request - request object.
-     * 
+     *
+     * @param Request $request - request object
+     * @param $id - user id
+     *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function create(Request $request)
+    public function create(Request $request, $id)
     {
         $this->validate($request, Company::$rules);
 
@@ -60,7 +61,7 @@ class CompanyController extends Controller
         $company->phone = $request->input("phone");
         $company->email = $request->input("email");
         $company->description = $request->input("description");
-        $company->user = $request->user()->id;
+        $company->user = $id;
         $company->save();
 
         return response()->json($company, 201);
@@ -75,9 +76,9 @@ class CompanyController extends Controller
      *
      * @throws NotFoundException
      */
-    public function delete($id)
+    public function delete($id, $company_id)
     {
-        $company = Company::find($id);
+        $company = Company::find($company_id)->where('user', $id);
         if (!$company) {
             throw new NotFoundException();
         }

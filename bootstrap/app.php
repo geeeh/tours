@@ -23,7 +23,7 @@ $app = new Laravel\Lumen\Application(
     realpath(__DIR__.'/../')
 );
 
- $app->withFacades(true, ['Illuminate\Support\Facades\Mail' => 'mail']);
+ $app->withFacades();
 
  $app->withEloquent();
 

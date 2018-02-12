@@ -16,7 +16,7 @@ class Company extends Model
         'name' => 'required',
         'location' => 'required|string',
         'phone' => 'required|string',
-        'email' => 'string',
+        'email' => 'string|email',
         'description' => 'required'
     ];
 

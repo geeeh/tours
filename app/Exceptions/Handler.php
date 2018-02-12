@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
@@ -10,7 +11,7 @@ use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
-use Illuminate\Http\Exception\HttpResponseException;
+use Symfony\Component\HttpKernel\Exception\ConflictHttpException;
 use Illuminate\Http\Response;
 
 class Handler extends ExceptionHandler
@@ -68,6 +69,9 @@ class Handler extends ExceptionHandler
         } elseif ($e instanceof NotFoundHttpException) {
             $status = Response::HTTP_NOT_FOUND;
             $e = new NotFoundHttpException('HTTP_NOT_FOUND', $e);
+        } elseif ($e instanceof ConflictHttpException) {
+            $status = Response::HTTP_CONFLICT;
+            $e = new ConflictHttpException('HTTP_CONFLICT', $e);
         } elseif ($e instanceof AuthorizationException) {
             $status = Response::HTTP_FORBIDDEN;
             $e = new AuthorizationException('HTTP_FORBIDDEN', $status);

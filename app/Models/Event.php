@@ -14,21 +14,20 @@ class Event extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'location', 'cost', 'date', 'image',
+        'name', 'location', 'cost', 'date'
     ];
 
     protected $casts = [
-        "location" => "array",
         "activities" => "array",
     ];
 
     public static $rules = [
         'name' => 'required',
         'cost' => 'required',
-        'location' => 'required',
+        'location' => 'required|json',
         'activities' => 'required',
         'date' => 'required',
-        'image' => 'string',
+        'image' => 'file',
     ];
 
     /**
