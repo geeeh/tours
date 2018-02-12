@@ -10,12 +10,8 @@
         "vlucas/phpdotenv": "~2.2",
         "nesbot/carbon": "^1.22",
         "palanik/lumen-cors": "dev-master",
-<<<<<<< HEAD
-        "illuminate/mail": "^5.5"
-=======
         "illuminate/mail": "^5.5",
         "guzzlehttp/guzzle": "^6.3"
->>>>>>> feat(project-structure):Initial project structure
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
