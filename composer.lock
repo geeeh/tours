@@ -4,26 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "dfaa1946f353b8916b613a9098a715ea",
-    "packages": [
-        {
-            "name": "doctrine/inflector",
-            "version": "v1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/inflector.git",
-                "reference": "e11d84c6e018beedd929cff5220969a3c6d1d462"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/e11d84c6e018beedd929cff5220969a3c6d1d462",
-                "reference": "e11d84c6e018beedd929cff5220969a3c6d1d462",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0"
-=======
     "content-hash": "a40b3eadf3cbf04d4561e7a2e86740cb",
     "packages": [
         {
@@ -42,7 +22,6 @@
             },
             "require": {
                 "php": "^7.1"
->>>>>>> feat(project-structure):Initial project structure
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.2"
@@ -50,11 +29,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-master": "1.2.x-dev"
-=======
                     "dev-master": "1.3.x-dev"
->>>>>>> feat(project-structure):Initial project structure
                 }
             },
             "autoload": {
@@ -96,11 +71,7 @@
                 "singularize",
                 "string"
             ],
-<<<<<<< HEAD
-            "time": "2017-07-22T12:18:28+00:00"
-=======
             "time": "2018-01-09T20:05:19+00:00"
->>>>>>> feat(project-structure):Initial project structure
         },
         {
             "name": "doctrine/lexer",
@@ -215,21 +186,6 @@
         },
         {
             "name": "erusev/parsedown",
-<<<<<<< HEAD
-            "version": "1.6.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/erusev/parsedown.git",
-                "reference": "fbe3fe878f4fe69048bb8a52783a09802004f548"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/fbe3fe878f4fe69048bb8a52783a09802004f548",
-                "reference": "fbe3fe878f4fe69048bb8a52783a09802004f548",
-                "shasum": ""
-            },
-            "require": {
-=======
             "version": "1.7.1",
             "source": {
                 "type": "git",
@@ -244,7 +200,6 @@
             },
             "require": {
                 "ext-mbstring": "*",
->>>>>>> feat(project-structure):Initial project structure
                 "php": ">=5.3.0"
             },
             "require-dev": {
@@ -273,22 +228,6 @@
                 "markdown",
                 "parser"
             ],
-<<<<<<< HEAD
-            "time": "2017-11-14T20:44:03+00:00"
-        },
-        {
-            "name": "illuminate/auth",
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/auth.git",
-                "reference": "a634ac1713b618f47a7af603e226dad9f857dbdc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/auth/zipball/a634ac1713b618f47a7af603e226dad9f857dbdc",
-                "reference": "a634ac1713b618f47a7af603e226dad9f857dbdc",
-=======
             "time": "2018-03-08T01:11:30+00:00"
         },
         {
@@ -484,7 +423,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/auth/zipball/ed2d931c9bac5f42ca74d6de64396c45c4383da1",
                 "reference": "ed2d931c9bac5f42ca74d6de64396c45c4383da1",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -522,19 +460,11 @@
             ],
             "description": "The Illuminate Auth package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-12-26T12:26:08+00:00"
-        },
-        {
-            "name": "illuminate/broadcasting",
-            "version": "v5.5.28",
-=======
             "time": "2018-03-07T14:10:51+00:00"
         },
         {
             "name": "illuminate/broadcasting",
             "version": "v5.5.39",
->>>>>>> feat(project-structure):Initial project structure
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/broadcasting.git",
@@ -584,11 +514,7 @@
         },
         {
             "name": "illuminate/bus",
-<<<<<<< HEAD
-            "version": "v5.5.28",
-=======
             "version": "v5.5.39",
->>>>>>> feat(project-structure):Initial project structure
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -633,18 +559,6 @@
         },
         {
             "name": "illuminate/cache",
-<<<<<<< HEAD
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/cache.git",
-                "reference": "3f910c668a81389e6986ecdd6c42b4bcb34e76cd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/cache/zipball/3f910c668a81389e6986ecdd6c42b4bcb34e76cd",
-                "reference": "3f910c668a81389e6986ecdd6c42b4bcb34e76cd",
-=======
             "version": "v5.5.39",
             "source": {
                 "type": "git",
@@ -655,7 +569,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/cache/zipball/6fdc951a4a2c9456e1b8fbef68d4d7cde3392e82",
                 "reference": "6fdc951a4a2c9456e1b8fbef68d4d7cde3392e82",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -691,19 +604,11 @@
             ],
             "description": "The Illuminate Cache package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-11-16T13:42:59+00:00"
-        },
-        {
-            "name": "illuminate/config",
-            "version": "v5.5.28",
-=======
             "time": "2018-01-26T01:40:49+00:00"
         },
         {
             "name": "illuminate/config",
             "version": "v5.5.39",
->>>>>>> feat(project-structure):Initial project structure
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/config.git",
@@ -747,18 +652,6 @@
         },
         {
             "name": "illuminate/console",
-<<<<<<< HEAD
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/console.git",
-                "reference": "87c3a0941654e0bffcd6fa15bc574c855071a338"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/console/zipball/87c3a0941654e0bffcd6fa15bc574c855071a338",
-                "reference": "87c3a0941654e0bffcd6fa15bc574c855071a338",
-=======
             "version": "v5.5.39",
             "source": {
                 "type": "git",
@@ -769,7 +662,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/console/zipball/3bb24c7d52a842e2c400ab6f57276b428bb270c2",
                 "reference": "3bb24c7d52a842e2c400ab6f57276b428bb270c2",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -806,22 +698,6 @@
             ],
             "description": "The Illuminate Console package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-12-26T14:46:43+00:00"
-        },
-        {
-            "name": "illuminate/container",
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/container.git",
-                "reference": "a7095697649494ced03d33cf4e756ccee94f8ab2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/a7095697649494ced03d33cf4e756ccee94f8ab2",
-                "reference": "a7095697649494ced03d33cf4e756ccee94f8ab2",
-=======
             "time": "2018-03-07T18:29:49+00:00"
         },
         {
@@ -836,7 +712,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/container/zipball/25821159f2bb12dc9e5720a4b13ea3372ffa8216",
                 "reference": "25821159f2bb12dc9e5720a4b13ea3372ffa8216",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -867,22 +742,6 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-08-14T18:00:01+00:00"
-        },
-        {
-            "name": "illuminate/contracts",
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/contracts.git",
-                "reference": "03e9014d2091a30b025c895aa6d39c2755576ea5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/03e9014d2091a30b025c895aa6d39c2755576ea5",
-                "reference": "03e9014d2091a30b025c895aa6d39c2755576ea5",
-=======
             "time": "2018-01-19T17:58:33+00:00"
         },
         {
@@ -897,7 +756,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/contracts/zipball/eb9a0171866fca0669c9acab6c7441e19b4694ca",
                 "reference": "eb9a0171866fca0669c9acab6c7441e19b4694ca",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -928,22 +786,6 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-11-22T19:01:14+00:00"
-        },
-        {
-            "name": "illuminate/database",
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/database.git",
-                "reference": "e5f0c2ce642baf74fc126f0077032b13c50e8997"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/e5f0c2ce642baf74fc126f0077032b13c50e8997",
-                "reference": "e5f0c2ce642baf74fc126f0077032b13c50e8997",
-=======
             "time": "2018-01-19T17:59:58+00:00"
         },
         {
@@ -958,7 +800,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/database/zipball/cfba60398815ff93bef31ade7c1d5dbbabdcaafc",
                 "reference": "cfba60398815ff93bef31ade7c1d5dbbabdcaafc",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -1004,19 +845,11 @@
                 "orm",
                 "sql"
             ],
-<<<<<<< HEAD
-            "time": "2017-12-19T14:02:10+00:00"
-        },
-        {
-            "name": "illuminate/encryption",
-            "version": "v5.5.28",
-=======
             "time": "2018-03-06T18:27:38+00:00"
         },
         {
             "name": "illuminate/encryption",
             "version": "v5.5.39",
->>>>>>> feat(project-structure):Initial project structure
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/encryption.git",
@@ -1062,11 +895,7 @@
         },
         {
             "name": "illuminate/events",
-<<<<<<< HEAD
-            "version": "v5.5.28",
-=======
             "version": "v5.5.39",
->>>>>>> feat(project-structure):Initial project structure
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -1111,18 +940,6 @@
         },
         {
             "name": "illuminate/filesystem",
-<<<<<<< HEAD
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "505d1a1e4a4d6e05db7f4d54bb1c9668e0afc754"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/505d1a1e4a4d6e05db7f4d54bb1c9668e0afc754",
-                "reference": "505d1a1e4a4d6e05db7f4d54bb1c9668e0afc754",
-=======
             "version": "v5.5.39",
             "source": {
                 "type": "git",
@@ -1133,7 +950,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/filesystem/zipball/31921ef731567fc0b80c110437a028ae8a3add13",
                 "reference": "31921ef731567fc0b80c110437a028ae8a3add13",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -1170,19 +986,11 @@
             ],
             "description": "The Illuminate Filesystem package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-12-14T13:33:54+00:00"
-        },
-        {
-            "name": "illuminate/hashing",
-            "version": "v5.5.28",
-=======
             "time": "2018-02-07T00:04:00+00:00"
         },
         {
             "name": "illuminate/hashing",
             "version": "v5.5.39",
->>>>>>> feat(project-structure):Initial project structure
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/hashing.git",
@@ -1226,18 +1034,6 @@
         },
         {
             "name": "illuminate/http",
-<<<<<<< HEAD
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/http.git",
-                "reference": "68010f86d8f6460a47301969583f088c62a4503e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/http/zipball/68010f86d8f6460a47301969583f088c62a4503e",
-                "reference": "68010f86d8f6460a47301969583f088c62a4503e",
-=======
             "version": "v5.5.39",
             "source": {
                 "type": "git",
@@ -1248,7 +1044,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/http/zipball/2b2b71222c387a97e2f20de605b058111ee12597",
                 "reference": "2b2b71222c387a97e2f20de605b058111ee12597",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -1281,26 +1076,6 @@
             ],
             "description": "The Illuminate Http package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-12-21T04:02:19+00:00"
-        },
-        {
-            "name": "illuminate/mail",
-            "version": "v5.5.34",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/mail.git",
-                "reference": "e0742c7337a807bcb7a1398a603f5eb769c47d07"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/mail/zipball/e0742c7337a807bcb7a1398a603f5eb769c47d07",
-                "reference": "e0742c7337a807bcb7a1398a603f5eb769c47d07",
-                "shasum": ""
-            },
-            "require": {
-                "erusev/parsedown": "~1.6",
-=======
             "time": "2018-01-19T17:59:39+00:00"
         },
         {
@@ -1319,7 +1094,6 @@
             },
             "require": {
                 "erusev/parsedown": "~1.7",
->>>>>>> feat(project-structure):Initial project structure
                 "illuminate/container": "5.5.*",
                 "illuminate/contracts": "5.5.*",
                 "illuminate/support": "5.5.*",
@@ -1355,19 +1129,11 @@
             ],
             "description": "The Illuminate Mail package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2018-01-05T00:24:48+00:00"
-        },
-        {
-            "name": "illuminate/pagination",
-            "version": "v5.5.28",
-=======
             "time": "2018-03-04T22:34:32+00:00"
         },
         {
             "name": "illuminate/pagination",
             "version": "v5.5.39",
->>>>>>> feat(project-structure):Initial project structure
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -1411,11 +1177,7 @@
         },
         {
             "name": "illuminate/pipeline",
-<<<<<<< HEAD
-            "version": "v5.5.28",
-=======
             "version": "v5.5.39",
->>>>>>> feat(project-structure):Initial project structure
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -1459,18 +1221,6 @@
         },
         {
             "name": "illuminate/queue",
-<<<<<<< HEAD
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/queue.git",
-                "reference": "b4b0ac0fdcb6799c0cab6b32dc0c8446975a9304"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/queue/zipball/b4b0ac0fdcb6799c0cab6b32dc0c8446975a9304",
-                "reference": "b4b0ac0fdcb6799c0cab6b32dc0c8446975a9304",
-=======
             "version": "v5.5.39",
             "source": {
                 "type": "git",
@@ -1481,7 +1231,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/queue/zipball/d81d3d5015923f752ff37df7f58b3857ead3d526",
                 "reference": "d81d3d5015923f752ff37df7f58b3857ead3d526",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -1525,19 +1274,11 @@
             ],
             "description": "The Illuminate Queue package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-12-16T14:16:41+00:00"
-        },
-        {
-            "name": "illuminate/session",
-            "version": "v5.5.28",
-=======
             "time": "2018-01-06T15:59:38+00:00"
         },
         {
             "name": "illuminate/session",
             "version": "v5.5.39",
->>>>>>> feat(project-structure):Initial project structure
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/session.git",
@@ -1587,18 +1328,6 @@
         },
         {
             "name": "illuminate/support",
-<<<<<<< HEAD
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/support.git",
-                "reference": "4db3cc82b483172b1b25d9dfcec684927f5c8cf9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/4db3cc82b483172b1b25d9dfcec684927f5c8cf9",
-                "reference": "4db3cc82b483172b1b25d9dfcec684927f5c8cf9",
-=======
             "version": "v5.5.39",
             "source": {
                 "type": "git",
@@ -1609,7 +1338,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/support/zipball/7540abdf66efe232bb657b9a5982fbb0d4de428f",
                 "reference": "7540abdf66efe232bb657b9a5982fbb0d4de428f",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -1620,11 +1348,7 @@
                 "php": ">=7.0"
             },
             "replace": {
-<<<<<<< HEAD
-                "tightenco/collect": "self.version"
-=======
                 "tightenco/collect": "<5.5.33"
->>>>>>> feat(project-structure):Initial project structure
             },
             "suggest": {
                 "illuminate/filesystem": "Required to use the composer class (5.2.*).",
@@ -1657,19 +1381,11 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-12-24T20:02:59+00:00"
-        },
-        {
-            "name": "illuminate/translation",
-            "version": "v5.5.28",
-=======
             "time": "2018-03-09T16:54:15+00:00"
         },
         {
             "name": "illuminate/translation",
             "version": "v5.5.39",
->>>>>>> feat(project-structure):Initial project structure
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/translation.git",
@@ -1714,18 +1430,6 @@
         },
         {
             "name": "illuminate/validation",
-<<<<<<< HEAD
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/validation.git",
-                "reference": "822d0fa49c935f54a2e6815d7ee349df5ed4bd71"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/validation/zipball/822d0fa49c935f54a2e6815d7ee349df5ed4bd71",
-                "reference": "822d0fa49c935f54a2e6815d7ee349df5ed4bd71",
-=======
             "version": "v5.5.39",
             "source": {
                 "type": "git",
@@ -1736,7 +1440,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/validation/zipball/61537c5bddc8b4d6f302ae8c6c4acbe0e30775e3",
                 "reference": "61537c5bddc8b4d6f302ae8c6c4acbe0e30775e3",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -1773,22 +1476,6 @@
             ],
             "description": "The Illuminate Validation package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-12-26T14:21:51+00:00"
-        },
-        {
-            "name": "illuminate/view",
-            "version": "v5.5.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/view.git",
-                "reference": "7e8d3cb28ab6f1c450b670646b1517f367399447"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/7e8d3cb28ab6f1c450b670646b1517f367399447",
-                "reference": "7e8d3cb28ab6f1c450b670646b1517f367399447",
-=======
             "time": "2018-01-12T13:34:57+00:00"
         },
         {
@@ -1803,7 +1490,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/view/zipball/b2a6f7cc1998ef49ba9f3ede42c9ef4e1b8ee568",
                 "reference": "b2a6f7cc1998ef49ba9f3ede42c9ef4e1b8ee568",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -1838,11 +1524,7 @@
             ],
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
-<<<<<<< HEAD
-            "time": "2017-11-21T13:35:42+00:00"
-=======
             "time": "2018-03-05T14:03:19+00:00"
->>>>>>> feat(project-structure):Initial project structure
         },
         {
             "name": "laravel/lumen-framework",
@@ -2051,27 +1733,6 @@
         },
         {
             "name": "nesbot/carbon",
-<<<<<<< HEAD
-            "version": "1.22.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "7cdf42c0b1cc763ab7e4c33c47a24e27c66bfccc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7cdf42c0b1cc763ab7e4c33c47a24e27c66bfccc",
-                "reference": "7cdf42c0b1cc763ab7e4c33c47a24e27c66bfccc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "symfony/translation": "~2.6 || ~3.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "~2",
-                "phpunit/phpunit": "~4.0 || ~5.0"
-=======
             "version": "1.24.2",
             "source": {
                 "type": "git",
@@ -2091,7 +1752,6 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "~2",
                 "phpunit/phpunit": "^4.8.35 || ^5.7"
->>>>>>> feat(project-structure):Initial project structure
             },
             "type": "library",
             "extra": {
@@ -2122,22 +1782,6 @@
                 "datetime",
                 "time"
             ],
-<<<<<<< HEAD
-            "time": "2017-01-16T07:55:07+00:00"
-        },
-        {
-            "name": "nikic/fast-route",
-            "version": "v1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/FastRoute.git",
-                "reference": "b5f95749071c82a8e0f58586987627054400cdf6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/b5f95749071c82a8e0f58586987627054400cdf6",
-                "reference": "b5f95749071c82a8e0f58586987627054400cdf6",
-=======
             "time": "2018-03-10T10:10:14+00:00"
         },
         {
@@ -2152,18 +1796,14 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nikic/FastRoute/zipball/181d480e08d9476e61381e04a71b34dc0432e812",
                 "reference": "181d480e08d9476e61381e04a71b34dc0432e812",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
             },
-<<<<<<< HEAD
-=======
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35|~5.7"
             },
->>>>>>> feat(project-structure):Initial project structure
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2188,11 +1828,7 @@
                 "router",
                 "routing"
             ],
-<<<<<<< HEAD
-            "time": "2017-01-19T11:35:12+00:00"
-=======
             "time": "2018-02-13T20:26:39+00:00"
->>>>>>> feat(project-structure):Initial project structure
         },
         {
             "name": "palanik/lumen-cors",
@@ -2334,8 +1970,6 @@
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
-<<<<<<< HEAD
-=======
             "name": "psr/http-message",
             "version": "1.0.1",
             "source": {
@@ -2386,7 +2020,6 @@
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
->>>>>>> feat(project-structure):Initial project structure
             "name": "psr/log",
             "version": "1.0.2",
             "source": {
@@ -2435,18 +2068,6 @@
         },
         {
             "name": "psr/simple-cache",
-<<<<<<< HEAD
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "753fa598e8f3b9966c886fe13f370baa45ef0e24"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/753fa598e8f3b9966c886fe13f370baa45ef0e24",
-                "reference": "753fa598e8f3b9966c886fe13f370baa45ef0e24",
-=======
             "version": "1.0.1",
             "source": {
                 "type": "git",
@@ -2457,7 +2078,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
                 "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -2492,11 +2112,7 @@
                 "psr-16",
                 "simple-cache"
             ],
-<<<<<<< HEAD
-            "time": "2017-01-02T13:31:39+00:00"
-=======
             "time": "2017-10-23T01:57:42+00:00"
->>>>>>> feat(project-structure):Initial project structure
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2555,18 +2171,6 @@
         },
         {
             "name": "symfony/console",
-<<<<<<< HEAD
-            "version": "v3.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/8394c8ef121949e8f858f13bc1e34f05169e4e7d",
-                "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d",
-=======
             "version": "v3.4.6",
             "source": {
                 "type": "git",
@@ -2577,7 +2181,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/console/zipball/067339e9b8ec30d5f19f5950208893ff026b94f7",
                 "reference": "067339e9b8ec30d5f19f5950208893ff026b94f7",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -2633,26 +2236,6 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "time": "2018-01-03T07:37:34+00:00"
-        },
-        {
-            "name": "symfony/css-selector",
-            "version": "v3.4.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "e66394bc7610e69279bfdb3ab11b4fe65403f556"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/e66394bc7610e69279bfdb3ab11b4fe65403f556",
-                "reference": "e66394bc7610e69279bfdb3ab11b4fe65403f556",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9|>=7.0.8"
-=======
             "time": "2018-02-26T15:46:28+00:00"
         },
         {
@@ -2671,16 +2254,11 @@
             },
             "require": {
                 "php": "^7.1.3"
->>>>>>> feat(project-structure):Initial project structure
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-master": "3.4-dev"
-=======
                     "dev-master": "4.0-dev"
->>>>>>> feat(project-structure):Initial project structure
                 }
             },
             "autoload": {
@@ -2711,22 +2289,6 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "time": "2018-01-03T07:37:34+00:00"
-        },
-        {
-            "name": "symfony/debug",
-            "version": "v3.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/debug.git",
-                "reference": "603b95dda8b00020e4e6e60dc906e7b715b1c245"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/603b95dda8b00020e4e6e60dc906e7b715b1c245",
-                "reference": "603b95dda8b00020e4e6e60dc906e7b715b1c245",
-=======
             "time": "2018-02-03T14:58:37+00:00"
         },
         {
@@ -2741,7 +2303,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/debug/zipball/9b1071f86e79e1999b3d3675d2e0e7684268b9bc",
                 "reference": "9b1071f86e79e1999b3d3675d2e0e7684268b9bc",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -2784,36 +2345,6 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "time": "2018-01-03T17:14:19+00:00"
-        },
-        {
-            "name": "symfony/event-dispatcher",
-            "version": "v3.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "26b87b6bca8f8f797331a30b76fdae5342dc26ca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/26b87b6bca8f8f797331a30b76fdae5342dc26ca",
-                "reference": "26b87b6bca8f8f797331a30b76fdae5342dc26ca",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9|>=7.0.8"
-            },
-            "conflict": {
-                "symfony/dependency-injection": "<3.3"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "~2.8|~3.0|~4.0",
-                "symfony/dependency-injection": "~3.3|~4.0",
-                "symfony/expression-language": "~2.8|~3.0|~4.0",
-                "symfony/stopwatch": "~2.8|~3.0|~4.0"
-=======
             "time": "2018-02-28T21:49:22+00:00"
         },
         {
@@ -2842,7 +2373,6 @@
                 "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/expression-language": "~3.4|~4.0",
                 "symfony/stopwatch": "~3.4|~4.0"
->>>>>>> feat(project-structure):Initial project structure
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -2851,11 +2381,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-master": "3.4-dev"
-=======
                     "dev-master": "4.0-dev"
->>>>>>> feat(project-structure):Initial project structure
                 }
             },
             "autoload": {
@@ -2882,22 +2408,6 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "time": "2018-01-03T07:37:34+00:00"
-        },
-        {
-            "name": "symfony/finder",
-            "version": "v3.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/finder.git",
-                "reference": "613e26310776f49a1773b6737c6bd554b8bc8c6f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/613e26310776f49a1773b6737c6bd554b8bc8c6f",
-                "reference": "613e26310776f49a1773b6737c6bd554b8bc8c6f",
-=======
             "time": "2018-02-14T14:11:10+00:00"
         },
         {
@@ -2912,7 +2422,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/finder/zipball/a479817ce0a9e4adfd7d39c6407c95d97c254625",
                 "reference": "a479817ce0a9e4adfd7d39c6407c95d97c254625",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -2948,22 +2457,6 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "time": "2018-01-03T07:37:34+00:00"
-        },
-        {
-            "name": "symfony/http-foundation",
-            "version": "v3.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "4a213be1cc8598089b8c7451529a2927b49b5d26"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/4a213be1cc8598089b8c7451529a2927b49b5d26",
-                "reference": "4a213be1cc8598089b8c7451529a2927b49b5d26",
-=======
             "time": "2018-03-05T18:28:11+00:00"
         },
         {
@@ -2978,7 +2471,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-foundation/zipball/6f5935723c11b4125fc9927db6ad2feaa196e175",
                 "reference": "6f5935723c11b4125fc9927db6ad2feaa196e175",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -3019,22 +2511,6 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "time": "2018-01-03T17:14:19+00:00"
-        },
-        {
-            "name": "symfony/http-kernel",
-            "version": "v3.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "1c2a82d6a8ec9b354fe4ef48ad1ad3f1a4f7db0e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/1c2a82d6a8ec9b354fe4ef48ad1ad3f1a4f7db0e",
-                "reference": "1c2a82d6a8ec9b354fe4ef48ad1ad3f1a4f7db0e",
-=======
             "time": "2018-02-22T10:48:49+00:00"
         },
         {
@@ -3049,7 +2525,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-kernel/zipball/a443bbbd93682aa08e623fade4c94edd586ed2de",
                 "reference": "a443bbbd93682aa08e623fade4c94edd586ed2de",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -3057,19 +2532,11 @@
                 "psr/log": "~1.0",
                 "symfony/debug": "~2.8|~3.0|~4.0",
                 "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
-<<<<<<< HEAD
-                "symfony/http-foundation": "^3.3.11|~4.0"
-            },
-            "conflict": {
-                "symfony/config": "<2.8",
-                "symfony/dependency-injection": "<3.4",
-=======
                 "symfony/http-foundation": "^3.4.4|^4.0.4"
             },
             "conflict": {
                 "symfony/config": "<2.8",
                 "symfony/dependency-injection": "<3.4.5|<4.0.5,>=4",
->>>>>>> feat(project-structure):Initial project structure
                 "symfony/var-dumper": "<3.3",
                 "twig/twig": "<1.34|<2.4,>=2"
             },
@@ -3083,11 +2550,7 @@
                 "symfony/config": "~2.8|~3.0|~4.0",
                 "symfony/console": "~2.8|~3.0|~4.0",
                 "symfony/css-selector": "~2.8|~3.0|~4.0",
-<<<<<<< HEAD
-                "symfony/dependency-injection": "~3.4|~4.0",
-=======
                 "symfony/dependency-injection": "^3.4.5|^4.0.5",
->>>>>>> feat(project-structure):Initial project structure
                 "symfony/dom-crawler": "~2.8|~3.0|~4.0",
                 "symfony/expression-language": "~2.8|~3.0|~4.0",
                 "symfony/finder": "~2.8|~3.0|~4.0",
@@ -3136,22 +2599,6 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "time": "2018-01-05T08:33:00+00:00"
-        },
-        {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
-                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
-=======
             "time": "2018-03-05T19:41:07+00:00"
         },
         {
@@ -3166,7 +2613,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/78be803ce01e55d3491c1397cf1c64beb9c1b63b",
                 "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -3178,11 +2624,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-master": "1.6-dev"
-=======
                     "dev-master": "1.7-dev"
->>>>>>> feat(project-structure):Initial project structure
                 }
             },
             "autoload": {
@@ -3216,22 +2658,6 @@
                 "portable",
                 "shim"
             ],
-<<<<<<< HEAD
-            "time": "2017-10-11T12:05:26+00:00"
-        },
-        {
-            "name": "symfony/polyfill-php70",
-            "version": "v1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php70.git",
-                "reference": "0442b9c0596610bd24ae7b5f0a6cdbbc16d9fcff"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/0442b9c0596610bd24ae7b5f0a6cdbbc16d9fcff",
-                "reference": "0442b9c0596610bd24ae7b5f0a6cdbbc16d9fcff",
-=======
             "time": "2018-01-30T19:27:44+00:00"
         },
         {
@@ -3246,7 +2672,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/3532bfcd8f933a7816f3a0a59682fc404776600f",
                 "reference": "3532bfcd8f933a7816f3a0a59682fc404776600f",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -3256,11 +2681,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-master": "1.6-dev"
-=======
                     "dev-master": "1.7-dev"
->>>>>>> feat(project-structure):Initial project structure
                 }
             },
             "autoload": {
@@ -3296,22 +2717,6 @@
                 "portable",
                 "shim"
             ],
-<<<<<<< HEAD
-            "time": "2017-10-11T12:05:26+00:00"
-        },
-        {
-            "name": "symfony/process",
-            "version": "v3.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
-                "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
-=======
             "time": "2018-01-30T19:27:44+00:00"
         },
         {
@@ -3326,7 +2731,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/process/zipball/cc4aea21f619116aaf1c58016a944e4821c8e8af",
                 "reference": "cc4aea21f619116aaf1c58016a944e4821c8e8af",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -3362,30 +2766,6 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "time": "2018-01-03T07:37:34+00:00"
-        },
-        {
-            "name": "symfony/translation",
-            "version": "v3.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/translation.git",
-                "reference": "17b5962d252b2d6d1d37a2485ebb7ddc5b2bef0a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/17b5962d252b2d6d1d37a2485ebb7ddc5b2bef0a",
-                "reference": "17b5962d252b2d6d1d37a2485ebb7ddc5b2bef0a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9|>=7.0.8",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "conflict": {
-                "symfony/config": "<2.8",
-=======
             "time": "2018-02-12T17:55:00+00:00"
         },
         {
@@ -3408,23 +2788,15 @@
             },
             "conflict": {
                 "symfony/config": "<3.4",
->>>>>>> feat(project-structure):Initial project structure
                 "symfony/dependency-injection": "<3.4",
                 "symfony/yaml": "<3.4"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-<<<<<<< HEAD
-                "symfony/config": "~2.8|~3.0|~4.0",
-                "symfony/dependency-injection": "~3.4|~4.0",
-                "symfony/finder": "~2.8|~3.0|~4.0",
-                "symfony/intl": "^2.8.18|^3.2.5|~4.0",
-=======
                 "symfony/config": "~3.4|~4.0",
                 "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/finder": "~2.8|~3.0|~4.0",
                 "symfony/intl": "~3.4|~4.0",
->>>>>>> feat(project-structure):Initial project structure
                 "symfony/yaml": "~3.4|~4.0"
             },
             "suggest": {
@@ -3435,11 +2807,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-master": "3.4-dev"
-=======
                     "dev-master": "4.0-dev"
->>>>>>> feat(project-structure):Initial project structure
                 }
             },
             "autoload": {
@@ -3466,11 +2834,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-            "time": "2018-01-03T07:37:34+00:00"
-=======
             "time": "2018-02-22T10:50:29+00:00"
->>>>>>> feat(project-structure):Initial project structure
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -3573,22 +2937,6 @@
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
-<<<<<<< HEAD
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3,<8.0-DEV"
-=======
             "version": "1.1.0",
             "source": {
                 "type": "git",
@@ -3603,28 +2951,18 @@
             },
             "require": {
                 "php": "^7.1"
->>>>>>> feat(project-structure):Initial project structure
             },
             "require-dev": {
                 "athletic/athletic": "~0.1.8",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-<<<<<<< HEAD
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~2.0"
-=======
                 "phpunit/phpunit": "^6.2.3",
                 "squizlabs/php_codesniffer": "^3.0.2"
->>>>>>> feat(project-structure):Initial project structure
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-master": "1.0.x-dev"
-=======
                     "dev-master": "1.2.x-dev"
->>>>>>> feat(project-structure):Initial project structure
                 }
             },
             "autoload": {
@@ -3649,11 +2987,7 @@
                 "constructor",
                 "instantiate"
             ],
-<<<<<<< HEAD
-            "time": "2015-06-14T21:17:01+00:00"
-=======
             "time": "2017-07-22T11:58:36+00:00"
->>>>>>> feat(project-structure):Initial project structure
         },
         {
             "name": "fzaninotto/faker",
@@ -4021,18 +3355,6 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-<<<<<<< HEAD
-            "version": "4.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "66465776cfc249844bde6d117abff1d22e06c2da"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/66465776cfc249844bde6d117abff1d22e06c2da",
-                "reference": "66465776cfc249844bde6d117abff1d22e06c2da",
-=======
             "version": "4.3.0",
             "source": {
                 "type": "git",
@@ -4043,7 +3365,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94fd0001232e47129dd3504189fa1c7225010d08",
                 "reference": "94fd0001232e47129dd3504189fa1c7225010d08",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -4081,11 +3402,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-<<<<<<< HEAD
-            "time": "2017-11-27T17:38:31+00:00"
-=======
             "time": "2017-11-30T07:14:17+00:00"
->>>>>>> feat(project-structure):Initial project structure
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -4136,18 +3453,6 @@
         },
         {
             "name": "phpspec/prophecy",
-<<<<<<< HEAD
-            "version": "1.7.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "e4ed002c67da8eceb0eb8ddb8b3847bb53c5c2bf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/e4ed002c67da8eceb0eb8ddb8b3847bb53c5c2bf",
-                "reference": "e4ed002c67da8eceb0eb8ddb8b3847bb53c5c2bf",
-=======
             "version": "1.7.5",
             "source": {
                 "type": "git",
@@ -4158,7 +3463,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpspec/prophecy/zipball/dfd6be44111a7c41c2e884a336cc4f461b3b2401",
                 "reference": "dfd6be44111a7c41c2e884a336cc4f461b3b2401",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -4170,11 +3474,7 @@
             },
             "require-dev": {
                 "phpspec/phpspec": "^2.5|^3.2",
-<<<<<<< HEAD
-                "phpunit/phpunit": "^4.8.35 || ^5.7"
-=======
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5"
->>>>>>> feat(project-structure):Initial project structure
             },
             "type": "library",
             "extra": {
@@ -4212,11 +3512,7 @@
                 "spy",
                 "stub"
             ],
-<<<<<<< HEAD
-            "time": "2017-11-24T13:59:53+00:00"
-=======
             "time": "2018-02-19T10:16:54+00:00"
->>>>>>> feat(project-structure):Initial project structure
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4469,18 +3765,6 @@
         },
         {
             "name": "phpunit/phpunit",
-<<<<<<< HEAD
-            "version": "6.5.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "83d27937a310f2984fd575686138597147bdc7df"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/83d27937a310f2984fd575686138597147bdc7df",
-                "reference": "83d27937a310f2984fd575686138597147bdc7df",
-=======
             "version": "6.5.7",
             "source": {
                 "type": "git",
@@ -4491,7 +3775,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6bd77b57707c236833d2b57b968e403df060c9d9",
                 "reference": "6bd77b57707c236833d2b57b968e403df060c9d9",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -4562,11 +3845,7 @@
                 "testing",
                 "xunit"
             ],
-<<<<<<< HEAD
-            "time": "2017-12-17T06:31:19+00:00"
-=======
             "time": "2018-02-26T07:01:09+00:00"
->>>>>>> feat(project-structure):Initial project structure
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -4674,18 +3953,6 @@
         },
         {
             "name": "sebastian/comparator",
-<<<<<<< HEAD
-            "version": "2.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "11c07feade1d65453e06df3b3b90171d6d982087"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/11c07feade1d65453e06df3b3b90171d6d982087",
-                "reference": "11c07feade1d65453e06df3b3b90171d6d982087",
-=======
             "version": "2.1.3",
             "source": {
                 "type": "git",
@@ -4696,16 +3963,11 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/34369daee48eafb2651bea869b4b15d75ccc35f9",
                 "reference": "34369daee48eafb2651bea869b4b15d75ccc35f9",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-<<<<<<< HEAD
-                "sebastian/diff": "^2.0",
-=======
                 "sebastian/diff": "^2.0 || ^3.0",
->>>>>>> feat(project-structure):Initial project structure
                 "sebastian/exporter": "^3.1"
             },
             "require-dev": {
@@ -4751,11 +4013,7 @@
                 "compare",
                 "equality"
             ],
-<<<<<<< HEAD
-            "time": "2018-01-12T06:34:42+00:00"
-=======
             "time": "2018-02-01T13:46:46+00:00"
->>>>>>> feat(project-structure):Initial project structure
         },
         {
             "name": "sebastian/diff",
@@ -5249,18 +4507,6 @@
         },
         {
             "name": "webmozart/assert",
-<<<<<<< HEAD
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
-                "reference": "2db61e59ff05fe5126d152bd0655c9ea113e550f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/2db61e59ff05fe5126d152bd0655c9ea113e550f",
-                "reference": "2db61e59ff05fe5126d152bd0655c9ea113e550f",
-=======
             "version": "1.3.0",
             "source": {
                 "type": "git",
@@ -5271,7 +4517,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
                 "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
->>>>>>> feat(project-structure):Initial project structure
                 "shasum": ""
             },
             "require": {
@@ -5308,11 +4553,7 @@
                 "check",
                 "validate"
             ],
-<<<<<<< HEAD
-            "time": "2016-11-23T20:04:58+00:00"
-=======
             "time": "2018-01-29T19:49:41+00:00"
->>>>>>> feat(project-structure):Initial project structure
         }
     ],
     "aliases": [],
